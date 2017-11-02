@@ -105,3 +105,7 @@ grid on; hold off;
 xlabel('Time ','FontSize', 22); 
 ylabel('Amplitude [deg]','FontSize', 22);
 set(gca,'FontSize',14);
+
+%% SAVE
+addpath('data');
+save('data\Part_1_data', 'T', 'K');
