@@ -103,4 +103,6 @@ ax = gca; ax.FontSize = 24; axis([0 150 0 600]);
 legend({'Without disturbances', 'With current', ...
 'With waves'}, 'Location', 'best', 'FontSize', 36)
 
+%% SAVE
+save('data\part3_data', 'K_pd', 'T_d', 'T_f')
 

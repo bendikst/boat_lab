@@ -91,3 +91,6 @@ legend({'$S_{\psi_{w}}(\omega)$', '$\lambda = 0.04$', ...
     'Interpreter', 'Latex', 'Location', 'best', 'FontSize', 25);
 %Choosing lambda:
 lambda = 0.08;
+
+%% SAVE
+save('data\Part_2_data', 'omega_0', 'lambda', 'K_w');
