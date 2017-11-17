@@ -1,0 +1,12 @@
+%% INIT
+close all;
+clear;
+clc;
+
+%% PROBLEM 1b
+T = 72.045;
+K = 0.156;
+
+%% PROBLEM 1d
+load
+H_tf = tf(K, T);

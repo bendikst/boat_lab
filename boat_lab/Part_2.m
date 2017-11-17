@@ -19,6 +19,7 @@ nfft = [];
 omega = 2*pi.*f;
 pxx = pxx./(2*pi);
 
+
 %% PROBLEM 5.2c - Find omega_0
 
 %Plot PSD
