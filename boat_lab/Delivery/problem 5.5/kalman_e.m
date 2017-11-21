@@ -2,7 +2,7 @@ function [sys,x0,str,ts] = DiscKal(t,x,u,flag,data)
 % Shell for the discrete kalman filter assignment in
 % TTK4115 Linear Systems.
 %
-% Author: Jørgen Spjøtvold
+% Author: Jï¿½rgen Spjï¿½tvold
 % 19/10-2003 
 %
 
@@ -86,11 +86,7 @@ P_predict = data.A_d*P_posteriori*(data.A_d)' + data.E_d*data.Q*(data.E_d)';
 sys=[x_predict; x_posteriori; P_predict(:)];
 
 function sys = mdlOutputs(t,x,u,data)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Calculate the outputs here
-% example: sys=x(1)+u(2), means that the output is the first state+
-% the second input. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 sys=[x(7); x(10)];
 
 function sys = mdlTerminate(t,x,u)
